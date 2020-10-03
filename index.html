@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BOTELLAS VIP TAP - PEDIDOS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+      <!-- estructura principal del formulario -->
+
+    
+      <div class="header">
+        <img id="logo" width="150px" height="150px" src="https://scontent.fmex4-1.fna.fbcdn.net/v/t1.0-9/119130738_180134063564545_4934339828161693267_o.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_eui2=AeENxvEjutidzfP6ZJ6xJTjV7B94ZRfr_4rsH3hlF-v_il2YBxwgQZNwsY2OmmhJiQcsApn-eXX5lqCfCPokk7vk&_nc_ohc=0npbNRi59eIAX8eddNW&_nc_ht=scontent.fmex4-1.fna&oh=783b63f6de933db5e99f2be6fa35a324&oe=5F822DCB" style="border-radius: 4rem;" >
+        <h1>BOTELLAS VIP TAP</h1>
+      </div>
+      <div class="parrafo">
+      <p id="parrafo1">Rellena el siguiente formulario para realizar tu pedido y redirigirte con alguno de nuestros asesores por via whatsapp</p>
+     
+    </div>
+
+        <div class="container">
+            <form action="">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Ingrese su Nombre:</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" required id="nombre" name="nombre" placeholder="Tu nombre.." >
+                </div>
+              </div>
+              <br>
+
+              <!--AQUI VAN LOS PRODUCTOS O SERVICIOS A OFRECER-->
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="botella">Seleccione la Botella deseada:</label>
+                </div>
+                <div class="col-75">
+                  <select id="botella" name="botella" required>
+                    <option value="Azteca de oro">Azteca de oro</option>
+                    <option value="Mezcal">Mezcal</option>
+                    <option value="Torres 10">Torres 10</option>
+                    <option value="Torres 5">Torres 5</option>
+                    <option value="Jack daniels">Jack daniels</option>
+                    <option value="Captain morgan">Captain morgan</option>
+                    <option value="Smirnoff">Smirnoff</option>
+                    <option value="Smirnoff de tamarindo">Smirnoff de tamarindo</option>
+                    <option value="Bacardi">Bacardi</option>
+                    <option value="Tequila 100 años">Tequila 100 años</option>
+                    <option value="Kraken">Kraken</option>
+                    <option value="Grey Goose">Grey Goose</option>
+                    <option value="Black & White">Black & White</option>
+                    <option value="Absolut Vodka">Absolut Vodka</option>
+                    <option value="Absolut Azul">Absolut Azul</option>
+                    <option value="Buchanans 12">Buchanans 12</option>
+                    <option value="Buchanans Master">Buchanans Master</option>
+                    <option value="Don Julio 70">Don Julio 70</option>
+                    <option value="Don Julio Blanco">Don Julio Blanco</option>
+                    <option value="Jose Cuervo Especial">Jose Cuervo Especial</option>
+                    <option value="Jose Cuervo Tradicional">Jose Cuervo Tradicional</option>
+
+
+                    
+                  </select>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25">
+                  <label for="direcion">Direccion del servicio:</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" required id="direccion" name="direccion" placeholder="Escribe la direcion exacta del servicio..">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fecha">Seleccione su fecha de entrega deseada.</label>
+                </div>
+                <div class="col-75">
+                  <input type="date" required id="fecha" name="fecha"   style="width: 100%; height: 2rem;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="hentrega">Seleccione su hora de entrega deseada.</label>
+                </div>
+                <div class="col-75">
+                  <input type="time" required id="hentrega" name="hentrega" min="12:00" max="00:00"  style="width: 100%; height: 2rem;">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25">
+                  <label for="telefono">Numero de Whatsapp a 10 digitos</label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" required id="telefono" name="telefono" placeholder="Tu telefono a 10 digitos.." style="width: 100%; height: 2rem;" >
+                </div>
+              </div>
+              <br>
+              <P id="aviso" class="aviso"> Al hacer clic en el boton, se le redirigira via whatsapp en donde se concretaran los detalles del pago y envio.</P>
+              <!--BOTON DE ENVIAR QUE RECIBE TODOS LOS PARAMETROS DE LOS INPUTS ANTERIORES MEDIANTE UN EVENT LISTENER ESPECIFICADO EN EL BACKEND DE JAVASCRIPT-->
+              <div class="row">
+                <br>
+                <center><button id="submit" class="button" >Enviar a WhatsApp</button></center>
+              </div>
+              
+            </form>
+          </div>
+          <br>
+
+          <!--Social media Buttons-->
+          <div class="social">
+          <a href="https://www.facebook.com/Botellas-VIP-Tap-109916837252935" target="blank" class="fa fa-facebook"></a><p class="follow">Siguenos en Facebook</p>
+          </div>
+
+          
+          <br><br>
+         <center><a class="ap" id="ap" href="pv.pdf" target="blank" download="pv.pdf">Descarga aqui nuestro aviso de privacidad.</a></center> 
+
+          <br>
+          <br>
+        <!--SCRIPT QUE REALIZA EL ENVIO DE LOS DATOS OBTENIDOS DE LOS INPUTS Y LOS ENVIA A UN ARCHIVO JS DONDE SE ENCUENTRA LA LOGICA DEL ALGORITMO QUE CONECTA CON WHATSAPP-->
+        <script src="js/form1.js"></script>
+
+    </body>
+</html>
